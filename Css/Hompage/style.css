@@ -1,0 +1,35 @@
+nav,ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    background-color: cadetblue;
+    padding: 5px;
+    font-size: 20px;
+}
+nav ul li  {
+    list-style: none;
+  
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+}
+.section1{
+    display: flex;
+    align-items: center;
+}
+.section1 video{
+    height: 600px;
+    width: 600px;
+}
