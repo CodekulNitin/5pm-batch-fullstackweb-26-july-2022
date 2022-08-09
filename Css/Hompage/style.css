@@ -1,35 +1,82 @@
-nav,ul{
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ul{
     display: flex;
     align-items: center;
     gap: 50px;
+    margin-inline: 120px;
     justify-content: space-between;
-    background-color: cadetblue;
+    height: 70px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 16px;
 }
-nav ul li  {
+ul li  {
     list-style: none;
-  
+}
+nav{
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    display: flex ;
+    width: 99%;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 0.2px;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 button{
-    padding: 10px;
-    width: 100px;
-    background-color: darkblue;
+    padding: 16px;
+    width: 200px;
+    background-color: black;
     color: white;
     font-weight: 700;
     font-size: 17px;
     border: none;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 .section1{
     display: flex;
+    width: auto;
+    overflow: hidden;
+    margin-inline: 120px;
     align-items: center;
+    margin-top: 80px;
 }
 .section1 video{
     height: 600px;
     width: 600px;
+}
+.heading{
+    font-size: 70px;
+}
+#paragaraph{
+    font-size: 23px;
+    color: gray;
+}
+.section2Header{
+    font-size: 30px;
+    margin-inline: 120px;
+}
+.section2{
+    display: flex;
+    width: auto;
+    overflow: hidden;
+    margin-inline: 120px;
+    align-items: center;
+    margin-top: 80px;
+}
+.section2 video{
+    height: 600px;
+    width: 600px;
+}
+.section2Heading{
+    display: flex;
+    align-items: center;
+}
+.orange{
+    color: orange;
 }
