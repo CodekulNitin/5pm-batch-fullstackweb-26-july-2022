@@ -124,10 +124,9 @@ button{
     justify-content: center;
     align-items: center;
     justify-self: center;
-    padding-inline: 20px;
+    padding-inline:20px;
     overflow: hidden;
     width: 100%;
-    gap: 30px;
 }
 .section6heding{
     display: flex;
