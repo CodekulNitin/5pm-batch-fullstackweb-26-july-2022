@@ -1,26 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        nav{
+            position: fixed;
+            width: 100%;
+            right: 0px;
+            left: 20px;
+            top: 0px;
+            display: flex ;
+            align-items: center;
+            z-index: 1000;
 
+        }
+      .logo a {
+        z-index: 1000 !important;
+        font-size: 30px;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .content img {
+        height: 20px;
+        width: 20px;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .menus{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      #menu1{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      #menu1 h3 {
+  border-bottom: 1px solid rgba(131, 115, 255);
+}
+#menu2 {
+  color: rgba(131, 115, 255);
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu3 {
+  color: rgba(131, 115, 255);
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      #myvideo{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+      }
+      .section{
+        display: flex;
+        margin-top: 750px;
+        justify-content: center;
+        font-size: 60px;
+        background: linear-gradient(98.75deg,#ef78f9,#8373ff 25%,#289ef6 50%,#8373ff 75%,#ef78f9);
+        color: transparent;
+        -webkit-background-clip: text;
+        
+      }
+    </style>
+  </head>
+  <body>
     <nav>
-          <div>
-        <video autoplay muted loop id="myvideo">
-            <source src="https://bloomind.io/wp-content/uploads/2022/05/animation_couleur_V5.mp4" type="video/mp4"></source>
-        </video>
-    </div>
-        <div class="content">
-            <div class="logo">
-              <a href="">
-                B
-                <!-- <svg
+      <div class="content">
+        <div class="logo">
+          <a href="">
+            B
+            <!-- <svg
                   width="176"
                   height="46"
                   viewBox="0 0 186 42"
@@ -33,25 +111,29 @@
                     fill="#8373FF"
                   ></path>
                 </svg> -->
-              </a>
-            </div>
-            <div class="menus">
-                <div id="menu1">
-                    <h3>DARK MODE</h3>
-                    <img src="./assets/moon.png" alt="">
-                </div>
-    <div id="menu2">
-        <i class="fa-brands fa-discord"></i>
-    </div>
-    <div id="menu3">
-        <i class="fa-brands fa-linkedin-in"></i>
-    </div>
-            </div>
+          </a>
+        </div>
+        <div class="menus">
+          <div id="menu1">
+            <h3>DARK MODE</h3>
+            <img src="./assets/moon.png" alt="" />
           </div>
+          <div id="menu2">
+            <i class="fa-brands fa-discord"></i>
+          </div>
+          <div id="menu3">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
     </nav>
-    <div class="section">
-      <h2>Bloomind est une aventure de <br> co-construction, une vision <br> d’un monde du travail tourné <br> vers l’épanouissement.</h2>
+    <div>
+        <video autoplay muted loop id="myvideo">
+            <source src="https://bloomind.io/wp-content/uploads/2022/05/animation_couleur_V5.mp4" type="video/mp4"></source>
+        </video>
     </div>
-    
-</body>
+    <div class="section">
+        <h2>Bloomind est une aventure de <br> co-construction, une vision <br> d’un monde du travail tourné <br> vers l’épanouissement.</h2>
+      </div>
+  </body>
 </html>
