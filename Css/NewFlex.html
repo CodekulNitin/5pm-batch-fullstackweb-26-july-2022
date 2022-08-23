@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        width: 98%;
+        position: fixed;
+        top: 0px;
+
+        border-bottom: 1px solid gray;
+      }
+      .menu ul {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+      }
+      .menu li {
+        list-style: none;
+      }
+      .menu li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+      }
+      h1:hover {
+        color: darkblue !important;
+      }
+      nav:hover {
+        background-color: black !important;
+        color: white !important;
+      }
+      #btn {
+        background-color: navy;
+        border: none;
+        color: white;
+        padding: 5px;
+        width: 70px;
+        border-radius: 5px;
+      }
+      .card{
+        margin-top: 100px;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        animation-name: card;
+        position: relative;
+        animation-duration: 2s ;
+        animation-iteration-count: infinite;
+    
+      }
+      .card:hover{
+        background-color:red;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+      }
+      @keyframes card {
+        /* from {background-color: red;}
+        to{background-color: yellow;} */
+        0% {background-color: red;  left: 0px; top: 0px;}
+        25% {background-color: yellow; left: 500px; top: 0px;}
+        50% {background-color: green; left: 500px; top: 500px;}
+        75% {background-color: blue; left: 0px; top: 500px;}
+        100% {background-color: black; left: 0px; top: 0px;}
+      }
+  /* comment Ctr+/ */
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <!-- <img src="" alt="">
+    h1 -->
+        <h1>Blomind</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Contact US</a>
+          </li>
+          <li>
+            <a href="">Gallary</a>
+          </li>
+          <li>
+            <button id="btn">LogIn</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="section">
+        <div class="card">
+
+        </div>
+    </div>
+  </body>
+</html>
