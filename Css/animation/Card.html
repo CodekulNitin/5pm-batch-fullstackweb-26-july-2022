@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        color: #a18a96;
+        background: url("https://cdn.pixabay.com/photo/2022/07/17/12/12/pembroke-welsh-corgi-7327285_960_720.jpg")
+          center no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .cardContent {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        border-top-left-radius: 20px;
+        transform: translateY(70px);
+        transition: transform 0.25s;
+      }
+      .cardContent::before {
+        content: "";
+        position: absolute;
+        top: -47px;
+        right: -45px;
+        width: 100px;
+        height: 100px;
+        transform: rotate(-175deg);
+        border-radius: 50%;
+        box-shadow: inset 48px 48px #fff;
+      }
+      .cardTitle {
+        color: #6a515e;
+        line-height: 15px;
+      }
+      .subTitle {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+      .discription {
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      .card:hover .cardContent{
+        transform: translate(0);
+      }
+      .card:hover .discription{
+        opacity: 1;
+        transition-delay: .25s;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <div class="cardContent">
+        <h3 class="cardTitle">The Hills</h3>
+        <span class="subTitle">Codekul</span>
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea nobis
+          magnam repellendus!
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
