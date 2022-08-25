@@ -31,27 +31,26 @@
         animation: progress 10s 5s linear forwards;
       }
       @keyframes fade {
-        5%{
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0px);
-
+        5% {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0px);
         }
-        90%{
-            opacity: 1;
-            transform: translateY(0px);
+        90% {
+          opacity: 1;
+          transform: translateY(0px);
         }
-        95%{
-            opacity: 0;
+        95% {
+          opacity: 0;
         }
-        100%{
-            opacity: 0;
-            transform: translateY(-30px);
+        100% {
+          opacity: 0;
+          transform: translateY(-30px);
         }
       }
       @keyframes progress {
-        to{
-            width: calc(100% - 10px);
+        to {
+          width: calc(100% - 10px);
         }
       }
     </style>
