@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+      }
+      .card {
+        height: 200px;
+        background-color: aqua;
+        object-fit: contain;
+      }
+      .card1 {
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      @media only screen and (max-width: 767px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .card {
+            display: none;
+          background-color: chartreuse;
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1279px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        .card {
+            display: none;
+          background-color: rgb(47, 0, 255);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card1">
+        <img
+          src="https://cdn.pixabay.com/photo/2022/01/21/15/31/gull-6955066_960_720.jpg"
+          alt=""
+        />
+      </div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </body>
+</html>
