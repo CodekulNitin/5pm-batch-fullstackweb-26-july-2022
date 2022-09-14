@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "Spacegrotesk variablefont wght", sans-serif;
+        background-color: #f1f6f1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between lg:justify-around items-center p-5 fixed w-full top-0 px-12"
+    >
+      <div>
+        <ul>
+          <li>
+            <a href="">
+              <img
+                src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62c6f20520749131dfee42d5_Hybrid-state-of-mind-logo.svg"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hidden lg:block">
+        <ul class="flex space-x-12 items-center font-semibold text-lg">
+          <li>
+            <a class="hover:text-indigo-400" href="">Member Benefits</a>
+          </li>
+          <li>
+            <a class="hover:text-indigo-400" href="">Code Of Conduct</a>
+          </li>
+          <li>
+            <a class="hover:text-indigo-400" href="">FAQ's</a>
+          </li>
+          <li>
+            <button
+              class="border border-black shadow shadow-black p-2 rounded-full bg-indigo-400 text-white font-bold"
+            >
+              Join The Community >
+            </button>
+          </li>
+        </ul>
+   
+      </div>
+      <div class="lg:hidden">
+        <img
+        class="h-5 w-5"
+          src="./hamburger.png"
+          alt=""
+        />
+      </div>
+    </nav>
+  </body>
+</html>
