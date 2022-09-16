@@ -15,50 +15,100 @@
     </style>
   </head>
   <body>
-    <nav
-      class="flex justify-between lg:justify-around items-center p-5 fixed w-full top-0 px-12"
-    >
-      <div>
-        <ul>
-          <li>
-            <a href="">
-              <img
-                src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62c6f20520749131dfee42d5_Hybrid-state-of-mind-logo.svg"
-                alt=""
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
+    <nav class="">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-2">
+								<img src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62c6f20520749131dfee42d5_Hybrid-state-of-mind-logo.svg" alt="Logo" class="h-20 w-20 mr-2">
+						
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+					
+					</div>
+					<!-- Secondary Navbar items -->
+					<div class="hidden md:flex items-center space-x-3 ">
+            <div class="hidden md:flex items-center space-x-1">
+							<a href="" class="py-4 px-2 text-black  hover:text-indigo-400 font-semibold ">Member Benefits</a>
+							<a href="" class="py-4 px-2 text-black font-semibold hover:text-indigo-400 transition duration-300">Code Of Conduct</a>
+							<a href="" class="py-4 px-2 text-black font-semibold hover:text-indigo-400 transition duration-300">FAQ's</a>
+					
+						</div>
 
-      <div class="hidden lg:block">
-        <ul class="flex space-x-12 items-center font-semibold text-lg">
-          <li>
-            <a class="hover:text-indigo-400" href="">Member Benefits</a>
-          </li>
-          <li>
-            <a class="hover:text-indigo-400" href="">Code Of Conduct</a>
-          </li>
-          <li>
-            <a class="hover:text-indigo-400" href="">FAQ's</a>
-          </li>
-          <li>
-            <button
-              class="border border-black shadow shadow-black p-2 rounded-full bg-indigo-400 text-white font-bold"
-            >
-              Join The Community >
-            </button>
-          </li>
-        </ul>
-   
+						<a href="" class="p-4 font-medium text-white bg-green-500 rounded-full  bg-indigo-400 transition duration-300">Join The Community
+            </a>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-indigo-400 font-semibold">Member Benefits</a></li>
+					<li><a href="#services" class="block text-sm px-2 py-4 hover:bg-indigo-400 transition duration-300">Code Of Conduct</a></li>
+					<li><a href="#about" class="block text-sm px-2 py-4 hover:bg-indigo-400 transition duration-300">FAQ's</a></li>
+					
+				</ul>
+			</div>
+			<script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+		</nav>
+    <header class="mt-20 text-4xl font-semibold">
+      <div class="flex space-x-3 justify-center">
+        <h1>Where
+        </h1>
+        <h1 class="-rotate-6 border-2 border-black rounded-full p-4 bg-orange-500"><span class="-rotate-6 border-2 border-black rounded-full p-2">Event</span></h1>
+        <h1>Folks</h1>
+        <div class="flex spac-x-2 h-12 w-12 ">
+          <img  class="bg-white p-2 rounded-full relative left-3 border-2 border-black" src="	https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51b9115e8836690faa_Avatar%201.png" alt="">
+          <img class="bg-white p-2 rounded-full relative border-2 border-black" src="	https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51b9115e8836690faa_Avatar%201.png" alt="">
+          <img class="bg-white p-2 rounded-full relative right-3 border-2 border-black" src="	https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51b9115e8836690faa_Avatar%201.png" alt="">
+          
+        </div>
+        
       </div>
-      <div class="lg:hidden">
-        <img
-        class="h-5 w-5"
-          src="./hamburger.png"
-          alt=""
-        />
+      <div class="flex justify-center mt-2 space-x-2">
+        <h1>Hang Out</h1>
+        <img src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb7a829834f794641946_Vector-1.svg" alt="">
+        <div class="flex justify-center">
+          <img class="absolute top-64 " src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb6b45d9629d5a40c64d_Vector-2.svg" alt="">
+        </div>
+      
+        <img class="relative right-2" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb7a4edab1ad179dd916_Vector.svg" alt="">
+        <div>
+
+        </div>
+     
       </div>
-    </nav>
+      <div class="text-lg grid text-center justify-center mx-44">
+        <p>Welcome to our free Slack community for event professionals. This community is designed </p>
+        <p>to help event professionals connect, share advice, and ask questions.</p>
+      </div>
+    </header>
+
   </body>
 </html>
